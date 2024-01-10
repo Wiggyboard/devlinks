@@ -11,8 +11,8 @@ export default function Header({ selectedTab, setSelectedTab, setLastTab, setNot
 
     return (
         <header>
-            <img className="header-left" src="static/logo-devlinks-large.svg" />
-            <img className="header-left-mobile" src="static/logo-devlinks-small.svg" />
+            <img className="header-left" src="images/logo-devlinks-large.svg" />
+            <img className="header-left-mobile" src="images/logo-devlinks-small.svg" />
             <div className="header-center">
                 <button
                     className={`links-tab header-tab header-tab${selectedTab === 'Links' ? '-selected' : ''}`}
@@ -31,7 +31,7 @@ export default function Header({ selectedTab, setSelectedTab, setLastTab, setNot
             </div>
             <button className='header-tab' id='preview-tab' onClick={() => handleTabClick('Preview')}>
                 <p>Preview</p>
-                <img className="preview-img" src="../static/icon-preview-header.svg" />
+                <img className="preview-img" src="images/icon-preview-header.svg" />
             </button>
         </header>
     );

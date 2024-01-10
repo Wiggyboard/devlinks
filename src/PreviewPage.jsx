@@ -34,10 +34,10 @@ export default function PreviewPage({ savedLinks, savedProfileDetails }) {
                             href={link.url}
                             target="_blank"
                         >
-                            <img src={link.slug ? `static/icon-${link.slug}.svg` : ''} />
+                            <img src={link.slug ? `images/icon-${link.slug}.svg` : ''} />
                             <p>{link.platform}</p>
                             <img src={
-                                link.slug ? `static/icon-arrow-right${link.slug === 'codepen' || link.slug === 'frontendmentor' ? '-black' : ''}.svg` : ''}
+                                link.slug ? `images/icon-arrow-right${link.slug === 'codepen' || link.slug === 'frontendmentor' ? '-black' : ''}.svg` : ''}
                             />
                         </a>
                     ))}

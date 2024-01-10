@@ -38,7 +38,7 @@ export default function CustomizeLinksSection({ links, setLinks, linkId, setLink
             <div id="link-editor-container">
                 {links.length === 0 &&
                     <div id="link-editor-empty">
-                        <img src="static/illustration-empty.svg" />
+                        <img src="images/illustration-empty.svg" />
                         <h1>Let's get you started</h1>
                         <p>Use the “Add new link” button to get started. Once you have more than one link, you can reorder and edit them. We're here to help you share your profiles with everyone!</p>
                     </div>

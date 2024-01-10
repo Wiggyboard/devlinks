@@ -22,10 +22,10 @@ export default function PhoneMockupSection({ links, profileDetails }) {
                 <div className="link-container">
                     {links.map((link) => (
                         <a className={`link ${link.slug ? `link-${link.slug}` : ''}`} key={link.id} href={link.platform && link.url.includes('https://') ? link.url : null} target="_blank">
-                            <img src={link.slug ? `static/icon-${link.slug}.svg` : ''} />
+                            <img src={link.slug ? `images/icon-${link.slug}.svg` : ''} />
                             <p>{link.platform}</p>
                             <img src={
-                                link.slug ? `static/icon-arrow-right${link.slug === 'codepen' || link.slug === 'frontendmentor' ? '-black' : ''}.svg` : ''}
+                                link.slug ? `images/icon-arrow-right${link.slug === 'codepen' || link.slug === 'frontendmentor' ? '-black' : ''}.svg` : ''}
                             />
                         </a>
                     ))}

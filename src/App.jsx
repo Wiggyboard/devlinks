@@ -83,7 +83,7 @@ export default function App() {
 				)}
 			</main>
 			<div className={`notification ${notificationDisplay ? '' : 'hidden'}`}>
-				<img src='../static/icon-checkmark.svg'></img>
+				<img src='images/icon-checkmark.svg'></img>
 				<p>{notificationText}</p>
 			</div>
 		</div>

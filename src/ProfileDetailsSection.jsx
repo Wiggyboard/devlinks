@@ -36,7 +36,7 @@ export default function ProfileDetailsSection({ setLinks, profileDetails, setPro
             <div id="profile-picture-container">
                 <p>Profile picture</p>
                 <div id="image-upload-container" className={profileDetails.image ? 'pseudo' : ''} style={imageUploadContainerStyle}>
-                    <img src={`static/icon-upload-image${profileDetails.image ? '-white' : ''}.svg`} />
+                    <img src={`images/icon-upload-image${profileDetails.image ? '-white' : ''}.svg`} />
                     <p>{profileDetails.image ? 'Change image' : '+ Upload Image'}</p>
                     <input type="file" onChange={handleImageUpload} />
                 </div>
